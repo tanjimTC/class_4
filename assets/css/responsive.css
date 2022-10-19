@@ -1,0 +1,196 @@
+
+
+
+@media (max-width: 767px) {
+    .tablet-col-1 > * {
+        width: 100%;
+        flex: auto;
+    }
+    .tablet-col-1 {
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+    .tablet-col-2 > * {
+        width: 100%;
+        flex: auto;
+    }
+    .tablet-col-2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+    .tablet-col-3 > * {
+        width: 100%;
+        flex: auto;
+    }
+    .tablet-col-3 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+    }
+
+    .responsive-show-nav-menu {
+        display: block;
+    }
+    .main-menu {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        z-index: 99;
+        left: 0;
+        top: 0;
+        background: rgb(34 34 34 / 95%);
+        padding: 50px 25px 20px 25px;
+        transform: scale(0.9);
+        opacity: 0;
+        visibility: hidden;
+        -webkit-transition: .3s;
+        -ms-transition: .3s;
+        -moz-transition: .3s;
+        -o-transition: .3s;
+        transition: .3s;
+    }
+    .main-menu.active {
+        opacity: 1;
+        visibility: visible;
+        transform: scale(1);
+    }
+    .main-menu ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .main-menu ul li {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .main-menu ul li a i {
+        display: none;
+    }
+    .responsive-icon {
+        display: block;
+        padding-top: 9px;
+        width: 30px;
+        text-align: center;
+        cursor: pointer;
+    }
+    .main-menu ul > li a {
+        color: #fff;
+        opacity: 0.6;
+    }
+    .main-menu ul li.active > a, 
+    .main-menu ul li a:hover, 
+    .main-menu ul > li:hover > a {
+        background: rgb(255 255 255 / 10%);
+        color: #ffffff;
+        opacity: 1;
+    }
+    .main-menu ul li .dropdown {
+        opacity: 1;
+        visibility: visible;
+        transform: rotateX(0);
+        position: relative;
+        width: 100%;
+        background: #232324;
+        border: #222;
+        overflow: hidden;
+        max-height: 0;
+        margin-bottom: -30px;
+        opacity: 0;
+        visibility: hidden;
+    }
+    .main-menu ul > li:hover > .dropdown {
+        opacity: 0;
+        visibility: hidden;
+    }
+    .main-menu ul li.active .dropdown {
+        max-height: 300px;
+        margin-bottom: 0;
+        opacity: 1;
+        visibility: visible;
+    }
+    .main-menu .close-nav-menu {
+        display: block;
+    }
+
+
+    .header-bar {
+        padding: 8px;
+        text-align: left;
+    }
+    .header-bar p {
+        padding-right: 18px;
+    }
+
+    .hero-banner-wrapper {
+        padding: 50px 0;
+    }
+    .section-head h1,
+    .what-we-do-right-content h1,
+    .hero-banner-content h1 {
+        font-size: 30px;
+    }
+    .hero-banner-content p {
+        font-size: 16px;
+        line-height: 1.4em;
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 570px) {
+    .mobile-col-1 > * {
+        width: 100%;
+        flex: auto;
+    }
+    .mobile-col-1 {
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+    .section-head h1, 
+    .what-we-do-right-content h1, 
+    .hero-banner-content h1 {
+        font-size: 24px;
+    }
+    .what-we-do-left-content {
+        flex-wrap: wrap;
+    }
+    .what-we-do-left-content > * {
+        flex: auto;
+        width: 100%;
+        margin: 0;
+    }
+    .what-we-do-wrapper {
+        padding: 70px 0;
+    }
+    .fun-facts-wrapper {
+        padding-bottom: 70px;
+    }
+    .fun-facts-box h1 {
+        font-size: 35px;
+        line-height: 1em;
+    }
+    .latest-blog-wrapper .tablet-col-2 {
+        grid-template-columns: 1fr;
+    }
+    .tablet-col-3 {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .get-in-touch {
+        padding: 40px 10px;
+    }
+    .get-in-touch .row {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+@media (max-width: 425px) {
+    .tablet-col-3,
+    .tablet-col-2 {
+        grid-template-columns: 1fr;
+    }
+    .newsletter-form .input-group input {
+        max-width: 100%;
+        width: 100%;
+    }
+}
